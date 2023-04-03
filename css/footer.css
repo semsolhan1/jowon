@@ -1,0 +1,145 @@
+/* footer */
+footer {
+    width: 100%;
+}
+
+.footer {
+    padding: 40px 50px 30px;
+    background: #1b1b1b;
+}
+
+.footer>div {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.footer01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer01 .footer-logo img {
+    display: block;
+}
+
+.footer .footer01 .footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right li {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-right li+li {
+    margin-left: 30px;
+}
+
+.footer02 {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 0 115px;
+}
+
+.footer .footer02 ul li+li {
+    padding-top: 10px;
+}
+
+.footer .footer02 ul li span {
+    font-size: 17px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer03 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer03 .copy {
+    font-size: 14px;
+    letter-spacing: -0.15px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.footer03 .logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer03 .logo-box .sns_box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .footer03 .logo-box .sns_box ul li+li {
+    margin-left: 15px;
+}
+
+.footer .footer03 .logo-box .sns_box ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36);
+    background-color: #1b1b1b;
+    border-radius: 50%;
+}
+
+.footer .footer03 .logo-box .sns_box ul li a img {
+    display: block;
+}
+
+.footer .footer03 .logo-box .store-logo {
+    width: 355px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 35px;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
+    background-color: #1b1b1b;
+    margin-left: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer .footer03 .logo-box .store-logo a {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer03 .logo-box .store-logo a img {
+    display: block;
+    margin-right: 12px;
+}
+
+.footer .footer03 .logo-box .store-logo a span {
+    vertical-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: rgba(153, 153, 153, 0.67);
+}
+
+.footer .footer03 .logo-box .store-logo a span strong {
+    color: rgba(255, 255, 255, 0.67);
+    font-size: 100%;
+    line-height: inherit;
+}
+
+.footer .footer03 .logo-box .store-logo>img {
+    /* cursor: pointer; */
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%) rotate(-90deg);
+}

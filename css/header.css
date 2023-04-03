@@ -1,0 +1,228 @@
+/* header style */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    transition: height 0.8s;
+    height: 147px;
+}
+
+.header.fixed {
+    background-color: #fff;
+    position: fixed;
+}
+
+header .header_top {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 80px;
+}
+
+header .header_top ul {
+    justify-content: flex-end;
+}
+
+.header_top ul li+li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.header_top ul li+li::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(-50%, -50%);
+}
+
+header .header_top a img {
+    margin-left: 5px;
+}
+
+.header .header_container {
+    padding: 40px 80px;
+    width: 100%;
+    /* height: 120px; */
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background: #fff; */
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .header_container .header_sec01 {
+    font-size: 0;
+    line-height: 1;
+    padding: 0;
+}
+
+header .header_container .header_sec02 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: block;
+}
+
+.gnv .depth01 {
+    justify-content: flex-end;
+}
+
+.gnv .depth01>li {
+    position: relative;
+    padding: 45px 80px 0 0;
+}
+
+.gnv .depth01>li>a {
+    display: block;
+    font-size: 20px;
+    position: relative;
+    padding: 0 0 40px;
+    white-space: nowrap;
+    /* font-weight: bold; */
+}
+
+header .header_container .ham-menu .lang .flex_center span.lang_btn {
+    margin: 0px 0 0 10px;
+    font-size: 0;
+    line-height: 1;
+}
+
+header .header_container .ham-menu .lang {
+    margin-right: 33px;
+    position: relative;
+    cursor: pointer;
+}
+
+header .header_container .ham-menu .lang li {
+    width: 100%;
+}
+
+header .header_container .ham-menu .lang p span {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    /* margin-right: 10px; */
+}
+
+header .header_container .ham-menu .lang li a .icon {
+    font-size: 36px;
+}
+
+.hamburger {
+    width: 26px;
+    /* height: 18px; */
+    position: relative;
+}
+
+.hamburger a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger a span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger a span+span {
+    margin-top: 8px;
+}
+
+/* .hamburger_menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff url(/img/pc_ham_bg.png) no-repeat right top -80px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+} */
+
+/* 각 항목에 마우스 커서 이동시 점 보여줌 */
+.gnv .depth01>li:hover>a::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #e0462e;
+    position: absolute;
+    top: 4px;
+    right: -11px;
+}
+
+/* li 항목에 밑줄 안 보이게 그려둠 */
+.gnv .depth01>li > a::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #e0462e;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+/* li 항목에 커서 이동 시 밑줄 보여줌 */
+.gnv .depth01>li:hover > a::before {
+    display: block;
+}
+
+.gnv .depth01>li:hover>a {
+    color: #e0462e;
+}
+
+.gnv .depth02 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 20px;
+}
+
+header:hover {
+    height: 573px;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0px 2px 9.8px 0.2px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+header:hover .gnv .depth02 {
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s 0.4s;
+}
+
+.gnv .depth02 li a {
+    padding: 7px 0;
+    display: block;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: -.02em;
+}
+
+.gnv .depth02 li:hover a {
+    color: #e0462e;
+    white-space: nowrap;
+}

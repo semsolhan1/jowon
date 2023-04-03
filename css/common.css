@@ -1,0 +1,183 @@
+@import url(/fonts/BINGGRAE.TTF);
+@import url(/fonts/BINGGRAE-BOLD.TTF);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    src: url("../fonts/BINGGRAE.TTF");
+    font-family: 'Binggrae';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Binggrae-Bold';
+    src: url("../fonts/BINGGRAE-BOLD.TTF") format('woff');
+    /* src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Binggrae-Bold.woff2') format('woff2'); */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ** 폰트 ** */
+.en {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    letter-spacing: normal !important;
+    /* font-weight: 300; */
+}
+
+.ko {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.font_poppin {
+    font-family: 'Poppins', sans-serif;
+}
+
+#Binggrae_font {
+    font-family: "Binggrae", sans-serif;
+}
+
+.font_bing {
+    font-family: Binggrae;
+}
+
+.font_bingbold {
+    font-family: Binggrae-Bold;
+}
+
+/* reset */
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/* common style */
+* {
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    line-height: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-style: normal;
+    color: #1f1f1f;
+    letter-spacing: -0.09em;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+header, footer, aside, main, section, article, nav {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.hide {
+    display: none !important;
+}
+
+#wrap {
+    position: relative;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul,
+li {
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    border: 0;
+    outline: none;
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+span,
+strong,
+b,
+em {
+    color: inherit;
+    font-size: 100%;
+    line-height: inherit;
+}
+
+button,
+textarea,
+input,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+button,
+textarea,
+input {
+    /* -webkit-appearance: none; */
+    border-radius: 0;
+}
+
+aside {
+    display: block;
+}
+
+.inb {
+    font-size: 0;
+}
+
+.inb > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content * {
+    letter-spacing: -0.8px;
+}
+
+.b_txt {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -1.03px;
+    color: #1f1f1f;
+}

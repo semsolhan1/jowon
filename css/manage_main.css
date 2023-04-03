@@ -1,0 +1,283 @@
+.wrap {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.main-wrap {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    /* z-index: -1; */
+}
+
+
+/* content-wrapper style */
+.content-wrapper {
+    /* background: red; */
+    width: 95%;
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 200px 0 140px;
+}
+
+/* main_top style */
+.content-wrapper .main_top ul .title_btn {
+    opacity: 0.4;
+    position: relative;
+    padding-right: 12px;
+}
+
+.content-wrapper .main_top ul .title_btn img {
+    vertical-align: 0;
+}
+
+.content-wrapper .main_top .main_title_wr .inb .title_btn.home a {
+    font-size: 0;
+    text-indent: -9999px;
+}
+
+.content-wrapper .main_top .main_title_wr .inb .title_btn a {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    color: #1f1f1f;
+}
+
+.content-wrapper .main_top ul .title_btn+.title_btn {
+    padding-left: 12px;
+}
+
+.content-wrapper .main_top ul .title_btn+.title_btn::before {
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    background: url("../img/btn_icon_brec_arrow.png") no-repeat center;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: '';
+    display: block;
+}
+
+.content-wrapper .main_top ul li {
+    padding: 10px;
+}
+
+.content-wrapper .main_top ul li a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content-wrapper .main_top .title {
+    font-size: 58px;
+    font-weight: normal;
+    margin-top: 15px;
+    line-height: 1;
+    letter-spacing: -2.9px;
+}
+
+/* tab-wrap style */
+.content-wrapper .tab-wrap {
+    /* background: gray; */
+    margin-top: 45px;
+    overflow-x: auto;
+}
+.content-wrapper .tab-wrap .tab-list {
+    /* background: green; */
+    margin-left: 10px;
+    display: flex;
+    white-space: nowrap;
+}
+.content-wrapper .tab-wrap .tab-list .tab-cont {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    min-width: 180px;
+    text-align: center;
+
+}.content-wrapper .tab-wrap .tab-list .tab-cont:hover,
+.content-wrapper .tab-wrap .tab-list .tab-cont.act {
+    background: red;  
+    transition: none;  
+}
+
+.content-wrapper .tab-wrap .tab-list .tab-cont a {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 60px;
+    line-height: 45px;
+}
+
+.content-wrapper .tab-wrap .tab-list .tab-cont.act a,
+.content-wrapper .tab-wrap .tab-list .tab-cont a:hover,
+.content-wrapper .tab-wrap .tab-list .tab-cont:hover {
+    color: white;
+    transition: none;
+}
+
+/* sub-title-wrap style */
+.content-wrapper .sub-title-wrap {
+    /* background: orange; */
+    margin-top: 70px;
+    box-shadow: 0px 3px 10px 0.9px rgba(0, 0, 0, 0.03);
+    border-radius: 30px;
+    text-align: center;
+    padding: 60px 0;
+}
+.content-wrapper .sub-title-wrap .sub-title {
+    /* background: skyblue; */
+    margin-bottom: 40px;
+}
+.content-wrapper .sub-title-wrap .sub-title h4 {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+.content-wrapper .sub-title-wrap .sub-txt {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* cont-wrap .sec1 style */
+.cont-wrap {
+   max-width: 1310px;
+   margin: 0 auto;
+}
+.cont-wrap .sec1 {
+    /* background: yellow; */
+}
+.cont-wrap .sec1 .sec1-box {
+    display: flex;
+    justify-content: space-between;
+}
+.cont-wrap .sec1 .sec1-box .cont {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 15px 10px 50px;
+    line-height: 30px;
+}
+.cont-wrap .sec1 .sec1-box .cont .imgbox {
+    margin-bottom: 20px;
+}
+.cont-wrap .sec1 .sec1-box .cont h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cont-wrap .sec1 .sec1-box img {
+    width: 100%;
+}
+
+/* cont-wrap .sec2 style */
+.cont-wrap .sec2 {
+    /* background: orange; */
+}
+.cont-wrap .sec2 h2,
+.cont-wrap .sec3 h2 {
+    font-family: Binggrae-Bold;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px;
+}
+.cont-wrap .sec2 .sec2-box {
+    padding: 60px;
+    margin: 40px auto 0;
+    border: 1px solid rgba(224, 223, 226, 0.6);
+    border-radius: 30px;
+}
+.cont-wrap .sec2 .sec2-box .cont-inner {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cont-wrap .sec2 .sec2-box .cont-inner:first-child {
+    margin-bottom: 20px;
+}
+.cont-wrap .sec2 .sec2-box .cont-inner .cont {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+.cont-wrap .sec2 .sec2-box .cont-inner .cont .imgbox {
+    width: 100%;
+    background: #f9f9f9;
+    border-radius: 30px;
+    padding: 60px 50px;    
+    margin:0 auto;
+    justify-content: center;   
+}   
+   
+.cont-wrap .sec2 .sec2-box .cont-inner .cont img {
+    justify-content: center;
+    margin: 0 auto;    
+}
+.cont-wrap .sec2 .sec2-box .cont-inner .cont .imgbox:hover {
+    transition: all 0.3s linear;
+    background: white;
+    box-shadow: 0px 5px 24px 3px rgba(0, 0, 0, 0.1);    
+}
+.cont-wrap .sec2 .sec2-box .cont-inner .i-tit {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    margin: 10px 0;
+}
+.cont-wrap .sec2 .sec2-box .cont-inner .i-txt {
+    font-weight: 300;
+    letter-spacing: -0.35px;
+    line-height: 1.5;
+    text-align: center;
+    word-break: keep-all;
+}
+
+/*cont-wrap .sec3 style */
+.cont-wrap .sec3 { 
+    /* background: gray;   */
+}
+.cont-wrap .sec3 .sec3-box {
+    /* background: greenyellow; */
+    margin: 40px 0;
+}
+.cont-wrap .sec3 .sec3-box .a-box {
+    background: #eef8fb;
+    margin: 0 auto 50px;
+    border-radius: 30px;
+    width: 80%;
+    padding: 40px 0;
+}
+.cont-wrap .sec3 .sec3-box .a-box .a-txt {
+    text-align: center;
+    font-size: 20px;
+    color: #1f1f1f;    
+    line-height: 1.5;    
+}
+.cont-wrap .sec3 .sec3-box .b-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    font-size: 0;
+    border-radius: 30px;
+}
+.cont-wrap .sec3 .sec3-box .b-box .b-txt-box {
+    padding: 40px 30px 40px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 24.3px 2.7px rgba(0,0,0,0.09);
+    background: #fff;
+    width: 45%;
+}
+.cont-wrap .sec3 .sec3-box .b-box .b-txt {
+    font-size: 18px;
+    line-height: 2;
+}
+
